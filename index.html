@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="text-center pt-2">
+      MOVIES CATALOG
+    </h2>
+
+    <div class="row" >
+      <div class="col-4">
+        <form class="mb-4" action="https://echo.htmlacademy.ru/courses" method="post">
+          <input type="text" class="form-control mb-2" aria-label="ave" placeholder="ave">
+          <input type="text" class="form-control mb-2" aria-label="number" placeholder="5">
+
+          <select class="form-select mb-2" aria-label="Default select example">
+            <option selected>All</option>
+            <option value="none">None</option>
+            <option value="some">Some of them</option>
+          </select>
+
+          <input class="form-control mb-2" list="datalistOptions" placeholder="Rating (high to low)...">
+          <datalist id="datalistOptions">
+            <option value="high to low">
+            <option value="low to high">
+          </datalist>
+
+          <button class="btn btn-primary w-100" type="submit">Search</button>
+        </form>
+
+        <h3 class="mb-2">
+          Bookmarked movies
+        </h3>
+
+        <ul class="list-group">
+          <li class="list-group-item">
+            <p class="mb-2">
+              Avangers: Infinity War
+            </p>
+            <button type="button" class="btn btn-danger">
+              Remove
+            </button>
+          </li>
+          <li class="list-group-item">
+            <p class="mb-2">
+              The Avangers
+            </p>
+            <button type="button" class="btn btn-danger">
+              Remove
+            </button>
+          </li>
+          <li class="list-group-item">
+            <p class="mb-2">
+              12 Years a Slave
+            </p>
+            <button type="button" class="btn btn-danger">
+              Remove
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="col-8">
+        <h3>
+          Search result: 39
+        </h3>
+
+        <div class="alert alert-primary" role="alert">
+          Use the form on the left to search for a movie
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-6">
+            <div class="card" >
+              <img src="./images/infinity-war.jpg" class="card-img-top" alt="marvel infinity war movie picture">
+              <div class="card-body">
+                <h5 class="card-title">Avangers: Infinity War</h5>
+                <div class="d-flex align-items-center mb-2">
+                  <img class="me-2" width="16" height="16" src="./images/calendar-silhouette.png" alt="picture of calendar">
+                  <p class="card-text">
+                    2018
+                  </p>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <img class="me-2" width="16" height="16" src="./images/star.png" alt="picture of star">
+                  <p class="card-text">
+                    8.7
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-outline-primary">Watch Trailer</button>
+                  <button type="button" class="btn btn-outline-info">More Info</button>
+                  <button type="button" class="btn btn-outline-success">Bookmark</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card" >
+              <img src="./images/avengers.jpg" class="card-img-top" alt="marvel infinity war movie picture">
+              <div class="card-body">
+                <h5 class="card-title">The Avangers</h5>
+                <div class="d-flex align-items-center mb-2">
+                  <img class="me-2" width="16" height="16" src="./images/calendar-silhouette.png" alt="picture of calendar">
+                  <p class="card-text">
+                    2012
+                  </p>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <img class="me-2" width="16" height="16" src="./images/star.png" alt="picture of star">
+                  <p class="card-text">
+                    8.1
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-outline-primary">Watch Trailer</button>
+                  <button type="button" class="btn btn-outline-info">More Info</button>
+                  <button type="button" class="btn btn-outline-success">Bookmark</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <nav class=""  aria-label="...">
+            <ul class="pagination ms-auto me-auto">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
